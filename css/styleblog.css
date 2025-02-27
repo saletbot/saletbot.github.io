@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 2;
+}
+
+header {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    background-color: #092542;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    font-size: 10px;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    margin-bottom: 0;
+    
+}
+
+.nav-container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.nav-container .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #130a77;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+nav a.active {
+    color: #007BFF;
+}
+.containerblog {
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.containerblog h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerblog p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post-summary {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post-summary:hover {
+    transform: translateY(-10px);
+}
+
+.post-summary h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-summary p {
+    color: #666;
+}
+
+.post-summary a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-summary a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #092542;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    position: fixed;
+    width: 100%;
+    height: 28px;
+    bottom: 0px;
+    
+}
+footer p {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: url('/images/icono.png') no-repeat center center;
+    background-size: contain;
+    width: 60px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
