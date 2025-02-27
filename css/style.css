@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,10 +8,12 @@ body {
 }
 
 header {
+    
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    
     background-color: #092542;
     color: #fff;
     padding: 0;
@@ -19,7 +22,9 @@ header {
     font-size: 10px;
     margin-top: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     margin-bottom: 0;
+    
 }
 
 .nav-container {
@@ -97,6 +102,8 @@ nav a.active {
     padding-bottom: 60px;
 }
 
+
+
 footer {
     background-color: #092542;
     color: #fff;
@@ -106,8 +113,8 @@ footer {
     width: 100%;
     height: 28px;
     bottom: 0px;
+    
 }
-
 footer p {
     margin-bottom: 5px;
     margin-top: 2px;
@@ -161,6 +168,8 @@ footer p {
     border: none;
     cursor: pointer;
 }
+
+/* Removed duplicate .chatbot-toggle definition */
 
 .gif-container {
     width: 100%;
@@ -246,6 +255,23 @@ footer p {
     text-align: center;
 }
 
+/*.chatbot-container {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 12px;
+}
+
+.chatbot-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}*/
+
 .chatbot-container {
     position: fixed;
     bottom: 50px;
@@ -265,10 +291,13 @@ footer p {
     cursor: pointer;
     border-radius: 5px;
     z-index: 1001;
-    background: url('/images/icono.png') no-repeat center center;
-    background-size: contain;
-    width: 60px;
-    height: 55px;
-    border: none;
-    cursor: pointer;
+  
+    
+        background: url('/images/icono.png') no-repeat center center;
+        background-size: contain;
+        width: 60px;
+        height: 55px;
+        border: none;
+        cursor: pointer;
+    
 }
