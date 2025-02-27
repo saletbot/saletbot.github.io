@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Acompañamiento</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Acompañante Emocional "SaletBot"</h1>
+    </header>
+   
+    <div class="nav-container">
+        <img src="images/logo.png" alt="Logotipo del Colegio La Salle" class="logo" width="160px">
+        <nav>
+            <a href="#index.html" class="active">Inicio</a>
+            <a href="sobre-nosotros.html">Nosotros...</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="comunidad.html">Comunidad</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="privacidad.html">Privacidad y Seguridad</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
+    </div>
+    
+    
+    
+    <div class="container">
+    
+    <div class="gif-container">
+        <img src="videos/Acompañante.gif" alt="Animación" class="responsive-gif">
+    </div>
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 3er año Sección "B"</p>
+    </footer>
+
+    <!-- Botón para mostrar/ocultar el chatbot -->
+    <button class="chatbot-toggle" onclick="toggleChatbot()"></button>
+
+    <!-- Chatbot Dialogflow -->
+    <div class="chatbot-container" id="chatbot">
+    
+    <iframe
+        allow="microphone;"
+        width="320"
+        height="400"
+        src="https://console.dialogflow.com/api-client/demo/embedded/f36125fa-fddf-42a0-ad35-8bf95dfcec2a">
+        
+    </iframe>
+    </div>
+    
+    <script>
+        function toggleChatbot() {
+            var chatbotContainer = document.getElementById('chatbot');
+            if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+                chatbotContainer.style.display = 'block';
+            } else {
+                chatbotContainer.style.display = 'none';
+                // Resetear el iframe
+                var iframe = chatbotContainer.querySelector('iframe');
+                var src = iframe.src;
+                iframe.src = '';
+                iframe.src = src;
+            }
+        }
+    </script>
+</body>
+</html>
