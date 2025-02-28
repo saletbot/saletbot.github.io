@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,7 +31,6 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     margin-top: 0px;
 }
@@ -45,14 +43,16 @@ header {
 nav {
     display: flex;
     gap: 25px;
+    padding-right: 30px;
 }
 
 nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #130a77;
+    color: #092542;
     font-weight: bold;
     font-size: 0.85rem;
+    
 }
 
 nav a:hover {
@@ -94,7 +94,7 @@ nav a.active {
     max-width: 800px;
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 150px; /* Aumentado para evitar que el footer tape el contenido */
+    margin-bottom: 0px; /* Aumentado para evitar que el footer tape el contenido */
     text-align: center;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -107,7 +107,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 6px 0;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     height: 28px;
     bottom: 0px;
@@ -116,7 +116,7 @@ footer {
 footer p {
     margin-bottom: 5px;
     margin-top: 2px;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 /* Chatbot styles */
@@ -171,10 +171,10 @@ footer p {
 
 .gif-container {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
 }
 
 .responsive-gif {
