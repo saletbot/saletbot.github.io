@@ -72,10 +72,13 @@ nav a.active {
 
 .container {
     width: 90%;
-    padding: 20px;
+    /*padding: 20px;*/
     max-width: 1200px;
-    margin: 80px auto 0; /* Ajuste para no ocultar el header */
+    margin: 20px auto 0; /* Ajuste para no ocultar el header */
     text-align: center;
+
+
+   
 }
 
 .gif-container {
@@ -92,58 +95,68 @@ nav a.active {
 
 .info-container {
     width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
+    text-align: center;
 }
 
 .info-container .header {
-    grid-column: span 2;
     background-color: #f4f4f4;
     padding: 20px;
-    text-align: center;
     border: 1px solid #ccc;
     border-radius: 8px;
+    margin-bottom: 20px;
+}.info-container .header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.info-container .column1,
-.info-container .column2 {
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.column {
     background-color: #eeeff0;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas grandes */
+    box-sizing: border-box;
 }
 
-.info-container img {
-    float: left;
-    margin-right: 10px;
+.column.full-width {
+    flex: 1 1 100%; /* Una columna en pantallas pequeñas */
 }
 
-.info-container h3 {
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.column h3 {
     font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.info-container p, .info-container ul {
+.column p, .column ul {
     font-size: 1rem;
+    text-align: left;
 }
 
-.info-container ul {
+.column ul {
     padding-left: 20px;
 }
 
-ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding-left: 0;
-}
-
-li {
+.column li {
     margin-bottom: 10px;
-    padding-left: 320px;
-    position: relative;
 }
-
 footer {
     background-color: #092542;
     color: #fff;
