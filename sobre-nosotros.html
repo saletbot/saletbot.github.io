@@ -1,68 +1,127 @@
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web de Acompañamiento</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Salet Bot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
     <header>
-        
         <h1>Acompañante Emocional "SaletBot"</h1>
     </header>
    
     <div class="nav-container">
         <img src="images/logo.png" alt="Logotipo del Colegio La Salle" class="logo" width="160px">
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="#sobre-nosotros.html" class="active">Nosotros...</a>
+            <a href="index.html"">Inicio</a>
+            <a href="#sobre-nosotros.html class="active">Nosotros</a>
             <a href="recursos.html">Recursos</a>
-            <a href="comunidad.html">Comunidad</a>
             <a href="blog.html">Blog</a>
             <a href="contacto.html">Contacto</a>
-            <a href="privacidad.html">Privacidad y Seguridad</a>
             <a href="galeria.html">Galería</a>
         </nav>
     </div>
-    <div class="container">
-        
-        <div style="text-align: center;"></div>
-            <img src="images/Equipo.png" alt="Equipo de trabajo" style="width: 100%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
-        </div>
+    
+  <section class="resource-section">
+    <div class="resource-card">
+      <img src="respiración.jpg" alt="Respiración Profunda">
+      <div class="resource-info">
+        <h2>Respiración Profunda</h2>
+        <p>Una técnica simple pero poderosa para reducir el estrés y la ansiedad. Inhala lentamente por la nariz, sostén el aire y exhala suavemente por la boca.</p>
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2025 3er año Sección "B"</p>
-    </footer>
 
-   <!-- Botón para mostrar/ocultar el chatbot -->
-   <button class="chatbot-toggle" onclick="toggleChatbot()"></button>
+    <div class="resource-card">
+      <img src="meditación.jpg" alt="Meditación Guiada">
+      <div class="resource-info">
+        <h2>Meditación Guiada</h2>
+        <p>Escucha audios o videos que te guíen a un estado de relajación profunda. Ideal para calmar la mente y mejorar la concentración.</p>
+      </div>
+    </div>
 
-   <!-- Chatbot Dialogflow -->
-   <div class="chatbot-container" id="chatbot">
-       <iframe
-           allow="microphone;"
-           width="350"
-           height="430"
-           src="https://console.dialogflow.com/api-client/demo/embedded/f36125fa-fddf-42a0-ad35-8bf95dfcec2a">
-       </iframe>
-   </div>
+    <div class="resource-card">
+      <img src="mindfulness.jpg" alt="Mindfulness">
+      <div class="resource-info">
+        <h2>Mindfulness</h2>
+        <p>Practica la atención plena en el momento presente. Enfócate en tu respiración, sensaciones corporales o sonidos a tu alrededor.</p>
+      </div>
+    </div>
 
-   <script>
-       function toggleChatbot() {
-           var chatbotContainer = document.getElementById('chatbot');
-           if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
-               chatbotContainer.style.display = 'block';
-           } else {
-               chatbotContainer.style.display = 'none';
-               // Resetear el iframe
-               var iframe = chatbotContainer.querySelector('iframe');
-               var src = iframe.src;
-               iframe.src = '';
-               iframe.src = src;
-           }
+    <div class="resource-card">
+      <img src="comunicación.jpg" alt="Comunicación Asertiva">
+      <div class="resource-info">
+        <h2>Comunicación Asertiva</h2>
+        <p>Aprende a expresar tus sentimientos y necesidades de manera clara y respetuosa. Usa frases como "Me siento... cuando...".</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="gestión-tiempo.jpg" alt="Gestión del Tiempo">
+      <div class="resource-info">
+        <h2>Gestión del Tiempo</h2>
+        <p>Organiza tus tareas de manera eficiente. Usa listas de tareas o aplicaciones como Trello para priorizar lo importante.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="ejercicio.jpg" alt="Ejercicio Físico">
+      <div class="resource-info">
+        <h2>Ejercicio Físico</h2>
+        <p>Realiza al menos 30 minutos de actividad física al día. Caminar, correr o practicar un deporte libera endorfinas y mejora tu estado de ánimo.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="diario.jpg" alt="Diario Emocional">
+      <div class="resource-info">
+        <h2>Diario Emocional</h2>
+        <p>Escribe tus emociones y reflexiones diarias. Esto te ayudará a identificar patrones y encontrar soluciones a tus problemas.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="apoyo-profesional.jpg" alt="Apoyo Profesional">
+      <div class="resource-info">
+        <h2>Apoyo Profesional</h2>
+        <p>Si lo necesitas, contacta a un psicólogo o especialista en bienestar emocional. Estamos aquí para ayudarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 3er año Sección "B"</p>
+</footer>
+
+<!-- Botón para mostrar/ocultar el chatbot -->
+<button class="chatbot-toggle" onclick="toggleChatbot()"></button>
+
+<!-- Chatbot Dialogflow -->
+<div class="chatbot-container" id="chatbot">
+   <iframe
+       allow="microphone;"
+       width="350"
+       height="430"
+       src="https://console.dialogflow.com/api-client/demo/embedded/f36125fa-fddf-42a0-ad35-8bf95dfcec2a">
+   </iframe>
+</div>
+
+<script>
+   function toggleChatbot() {
+       var chatbotContainer = document.getElementById('chatbot');
+       if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+           chatbotContainer.style.display = 'block';
+       } else {
+           chatbotContainer.style.display = 'none';
+           // Resetear el iframe
+           var iframe = chatbotContainer.querySelector('iframe');
+           var src = iframe.src;
+           iframe.src = '';
+           iframe.src = src;
        }
-   </script>
+   }
+</script>
 </body>
 </html>

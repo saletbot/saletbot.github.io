@@ -1,66 +1,163 @@
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web de Acompañamiento</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Salet Bot</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
     <header>
-        
         <h1>Acompañante Emocional "SaletBot"</h1>
     </header>
    
     <div class="nav-container">
         <img src="images/logo.png" alt="Logotipo del Colegio La Salle" class="logo" width="160px">
         <nav>
-            <a href="inicio.html">Inicio</a>
-            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-nosotros.html ">Nosotros</a>
             <a href="#recursos.html" class="active">Recursos</a>
-            <a href="comunidad.html">Comunidad</a>
             <a href="blog.html">Blog</a>
             <a href="contacto.html">Contacto</a>
-            <a href="privacidad.html">Privacidad y Seguridad</a>
             <a href="galeria.html">Galería</a>
         </nav>
     </div>
-    <div class="container">
-        <h2>Recursos</h2>
-        <p>Esta es la sección de Recursos del sitio web.</p>
+
+    
+    <div class="info-container">
+        <div class="header">
+            <h1>¿Qué son los recursos de acompañamiento emocional?</h1>
+            <p>En el Colegio La Salle de Barquisimeto, entendemos que el bienestar emocional es fundamental para el desarrollo integral de nuestros alumnos. Por eso, hemos creado una serie de recursos diseñados para ayudarte a manejar el estrés, la ansiedad y otros desafíos emocionales. Desde técnicas de relajación hasta herramientas para mejorar la comunicación, estos recursos están aquí para apoyarte en cada paso del camino.</p>
+        
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2025 3er año Sección "B"</p>
-    </footer>
+ 
 
-    <!-- Botón para mostrar/ocultar el chatbot -->
-   <button class="chatbot-toggle" onclick="toggleChatbot()"></button>
 
-   <!-- Chatbot Dialogflow -->
-   <div class="chatbot-container" id="chatbot">
-       <iframe
-           allow="microphone;"
-           width="350"
-           height="430"
-           src="https://console.dialogflow.com/api-client/demo/embedded/c9b49778-330f-449f-92d3-3d2fbe4ed5c2">
-       </iframe>
-   </div>
 
-   <script>
-       function toggleChatbot() {
-           var chatbotContainer = document.getElementById('chatbot');
-           if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
-               chatbotContainer.style.display = 'block';
-           } else {
-               chatbotContainer.style.display = 'none';
-               // Resetear el iframe
-               var iframe = chatbotContainer.querySelector('iframe');
-               var src = iframe.src;
-               iframe.src = '';
-               iframe.src = src;
-           }
+  <section class="resource-section">
+    <div class="resource-card">
+      <img src="/images/resp.png" alt="Respiración Profunda" class="logo" width="160px">
+      <div class="resource-info">
+        <h2>Respiración Profunda</h2>
+        <p>Una técnica simple pero poderosa para reducir el estrés y la ansiedad. Inhala lentamente por la nariz, sostén el aire y exhala suavemente por la boca.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="/images/med.png" alt="Meditación Guiada" class="logo" width="160px">
+      <div class="resource-info">
+        <h2>Meditación Guiada</h2>
+        <p>Escucha audios o videos que te guíen a un estado de relajación profunda. Ideal para calmar la mente y mejorar la concentración.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="/images/mind.png" alt="Mindfulness">
+      <div class="resource-info">
+        <h2>Mindfulness</h2>
+        <p>Practica la atención plena en el momento presente. Enfócate en tu respiración, sensaciones corporales o sonidos a tu alrededor.</p>
+      </div>
+    </div>
+
+    <div class="resource-card" id="comunicacion-card">
+        <img src="/images/comu.png" alt="Comunicación Asertiva">
+        <div class="resource-info">
+          <h2>Comunicación Asertiva</h2>
+          <p>Aprende a expresar tus sentimientos y necesidades de manera clara y respetuosa. Usa frases como "Me siento... cuando...".</p>
+        </div>
+      </div>
+
+    <div class="resource-card">
+      <img src="/images/tiempo.png" alt="Gestión del Tiempo">
+      <div class="resource-info">
+        <h2>Gestión del Tiempo</h2>
+        <p>Organiza tus tareas de manera eficiente. Usa listas de tareas o aplicaciones como Trello para priorizar lo importante.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="/images/ejer.png" alt="Ejercicio Físico">
+      <div class="resource-info">
+        <h2>Ejercicio Físico</h2>
+        <p>Realiza al menos 30 minutos de actividad física al día. Caminar, correr o practicar un deporte libera endorfinas y mejora tu estado de ánimo.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="/images/diario.png" alt="Diario Emocional">
+      <div class="resource-info">
+        <h2>Diario Emocional</h2>
+        <p>Escribe tus emociones y reflexiones diarias. Esto te ayudará a identificar patrones y encontrar soluciones a tus problemas.</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="/images/apoyo.png" alt="Apoyo Profesional">
+      <div class="resource-info">
+        <h2>Apoyo Profesional</h2>
+        <p>Si lo necesitas, contacta a un psicólogo o especialista en bienestar emocional. Estamos aquí para ayudarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 3er año Sección "C"</p>
+</footer>
+
+<!-- Botón para mostrar/ocultar el chatbot -->
+<button class="chatbot-toggle" onclick="toggleChatbot()"></button>
+
+<!-- Chatbot Dialogflow -->
+<div class="chatbot-container" id="chatbot">
+   <iframe
+       allow="microphone;"
+       width="350"
+       height="430"
+       src="https://console.dialogflow.com/api-client/demo/embedded/f36125fa-fddf-42a0-ad35-8bf95dfcec2a">
+   </iframe>
+</div>
+
+<script>
+   function toggleChatbot() {
+       var chatbotContainer = document.getElementById('chatbot');
+       if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+           chatbotContainer.style.display = 'block';
+       } else {
+           chatbotContainer.style.display = 'none';
+           // Resetear el iframe
+           var iframe = chatbotContainer.querySelector('iframe');
+           var src = iframe.src;
+           iframe.src = '';
+           iframe.src = src;
        }
-   </script>
+   }
+</script>
+
+<!-- Ventana Emergente (Modal) -->
+<div class="modal" id="comunicacion-modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <h2>Comunicación Asertiva</h2>
+      <p>La comunicación asertiva es una habilidad que te permite expresar tus pensamientos, sentimientos y necesidades de manera clara, directa y respetuosa, sin agredir ni someterte a los demás. Es fundamental para construir relaciones saludables y resolver conflictos de manera efectiva.</p>
+      <h3>¿Cómo practicarla?</h3>
+      <ul>
+        <li>Usa frases como "Me siento... cuando..." para expresar tus emociones sin culpar a los demás.</li>
+        <li>Escucha activamente a la otra persona, mostrando interés y empatía.</li>
+        <li>Mantén un tono de voz calmado y un lenguaje corporal abierto.</li>
+        <li>Evita generalizaciones como "Siempre haces esto" o "Nunca me escuchas".</li>
+      </ul>
+      <h3>Beneficios</h3>
+      <ul>
+        <li>Mejora las relaciones interpersonales.</li>
+        <li>Reduce el estrés y la ansiedad al expresar lo que sientes.</li>
+        <li>Fomenta el respeto mutuo y la comprensión.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
