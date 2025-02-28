@@ -1,0 +1,106 @@
+/* Estilos generales */
+
+  
+ 
+  
+ 
+  
+  /* Estilos para las tarjetas de recursos */
+  .resource-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .resource-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .resource-info {
+    padding: 15px;
+  }
+  
+  .resource-info h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #3e5547;
+  }
+  
+  .resource-info p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  
+  /* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close-btn:hover {
+    color: #3d434a;
+  }
+  
+  /* Estilos para el contenido del modal */
+  .modal-content h2 {
+    color: #436155;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content h3 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .modal-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .modal-content ul li {
+    margin-bottom: 10px;
+  }
+ 
