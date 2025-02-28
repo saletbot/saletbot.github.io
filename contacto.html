@@ -14,17 +14,17 @@
    
     <div class="nav-container">
         <img src="images/logo.png" alt="Logotipo del Colegio La Salle" class="logo" width="160px">
-        <nav>
-            <a href="inicio.html">Inicio</a>
-            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <a href="#index.html" >Inicio</a>
+            <a href="sobre-nosotros.html">Nosotros</a>
             <a href="recursos.html">Recursos</a>
-            <a href="comunidad.html">Comunidad</a>
             <a href="blog.html">Blog</a>
             <a href="#contacto.html" class="active">Contacto</a>
-            <a href="privacidad.html">Privacidad y Seguridad</a>
             <a href="galeria.html">Galería</a>
         </nav>
     </div>
+
     <div class="container">
         <h2>Contacto</h2>
         <p>Esta es la sección de Contacto del sitio web.</p>
@@ -67,19 +67,28 @@
    </div>
 
    <script>
-       function toggleChatbot() {
-           var chatbotContainer = document.getElementById('chatbot');
-           if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
-               chatbotContainer.style.display = 'block';
-           } else {
-               chatbotContainer.style.display = 'none';
-               // Resetear el iframe
-               var iframe = chatbotContainer.querySelector('iframe');
-               var src = iframe.src;
-               iframe.src = '';
-               iframe.src = src;
-           }
-       }
-   </script>
+    function toggleMenu() {
+        var navMenu = document.getElementById('nav-menu');
+        if (navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+        } else {
+            navMenu.classList.add('open');
+        }
+    }
+
+    function toggleChatbot() {
+        var chatbotContainer = document.getElementById('chatbot');
+        if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+            chatbotContainer.style.display = 'block';
+        } else {
+            chatbotContainer.style.display = 'none';
+            // Resetear el iframe
+            var iframe = chatbotContainer.querySelector('iframe');
+            var src = iframe.src;
+            iframe.src = '';
+            iframe.src = src;
+        }
+    }
+</script>
 </body>
 </html>
