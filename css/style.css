@@ -39,14 +39,15 @@ header h1 {
 
 nav {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: #130a77;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    padding-right: 40px;
 }
 
 nav a:hover {
@@ -59,9 +60,9 @@ nav a.active {
 
 .container {
     width: 90%;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 80px auto 0; /* Ajuste para no ocultar el header */
+    padding: 10px;
+    max-width: 1080px;
+    margin: 15px auto 0; /* Ajuste para no ocultar el header */
     text-align: center;
 }
 
@@ -119,6 +120,24 @@ nav a.active {
 .info-container ul {
     padding-left: 20px;
 }
+
+
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    padding-left: 320px;
+    position: relative;
+  }
+  
+
+
+
+
+
 
 footer {
     background-color: #092542;
