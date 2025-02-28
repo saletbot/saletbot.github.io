@@ -1,0 +1,124 @@
+/* Estilos generales */
+.contenedor-formulario {
+    position: relative;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px; /* Espacio para el footer */
+}
+
+/* Contenedor del formulario */
+.formulario-container {
+    
+        position: relative; /* Cambiamos a relative para que no afecte el footer */
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 20px; /* Margen para evitar que toque los bordes */
+    }
+
+
+    
+
+/* Logo */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Título del formulario */
+h2 {
+    color: #092542;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-enviar,
+.btn-cancelar {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar {
+    background-color: #092542;
+    color: white;
+}
+
+.btn-enviar:hover {
+    background-color: #1a3a5e;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-cancelar:hover {
+    background-color: #c82333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .formulario-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .btn-enviar,
+    .btn-cancelar {
+        width: 100%;
+    }
+}
