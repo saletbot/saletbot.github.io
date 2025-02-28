@@ -23,6 +23,7 @@ header h1 {
 }
 
 .nav-container {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,7 +41,7 @@ header h1 {
 
 nav {
     display: flex;
-    gap: 15px;
+    gap: 35px;
 }
 
 nav a {
@@ -48,6 +49,7 @@ nav a {
     color: #130a77;
     font-weight: bold;
     font-size: 0.85rem;
+    padding-right: 30px;
 }
 
 nav a:hover {
