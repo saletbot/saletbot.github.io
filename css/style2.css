@@ -59,6 +59,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
     z-index: 1000;
+    font-size: 1rem;
   }
   
   .modal-content {
