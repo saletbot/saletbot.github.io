@@ -201,7 +201,171 @@ footer p {
 
 
 
+.contenedor-blog {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
+/* Encabezado del blog */
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-header h1 {
+    color: #092542;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Entradas del blog */
+.entradas-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacio entre entradas */
+}
+
+.entrada {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.entrada:hover {
+    transform: translateY(-5px);
+}
+
+.entrada-imagen {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.entrada-titulo {
+    color: #092542;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.entrada-contenido {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Sección de comentarios */
+.seccion-comentarios {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.seccion-comentarios h3 {
+    color: #092542;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.formulario-comentario {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #092542;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #1a3a5e;
+}
+
+
+.descripcion-blog {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.contenedor-blog h2{
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-header p {
+        font-size: 1rem;
+    }
+
+    .entrada-titulo {
+        font-size: 1.3rem;
+    }
+
+    .entrada-contenido {
+        font-size: 0.9rem;
+    }
+
+    .seccion-comentarios h3 {
+        font-size: 1.2rem;
+    }
+}
 
 
 
