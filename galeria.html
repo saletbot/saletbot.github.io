@@ -26,37 +26,89 @@
         </nav>
     </div>
 
-    <div class="container">
-        <h2>Galería</h2>
-        <p>Esta es la sección de Galería del sitio web.</p>
-    
-    <div class="gallery-section">
-        <h3>Imágenes</h3>
-        <div class="image-gallery">
-            <img src="images/imagen1.jpg" alt="Imagen 1" width="400px" length="250px">
-            <img src="images/imagen2.jpg" alt="Imagen 2" width="400px" length="250px">
-            <img src="images/imagen3.png" alt="Imagen 3" width="400px" length="250px">
-            <img src="images/imagen4.png" alt="Imagen 4" width="400px" length="250px">
-        </div>
-    </div>
+    <!-- Contenido interno de la galería -->
+<div class="contenedor-galeria">
+    <!-- Encabezado de la galería -->
+    <h2>Galería de Imágenes y Video</h2>
+    <p class="descripcion-galeria">
+        Bienvenido a la Galería de SaletBot, tu espacio para explorar y viitar imagenes y videos con referencia a el acompañamiento emocional!
+    </p><br>
 
-    <div class="video-section" style="margin-bottom: 50px;">
-        <h3>Videos</h3>
-        <div class="video-gallery">
-            <video width="320" height="240" controls>
-                <source src="videos/video1.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-            <video width="320" height="240" controls>
-                <source src="videos/video2.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
+    <!-- Galería de imágenes -->
+    <section class="galeria-imagenes">
+        <!-- Imagen 1 -->
+        <div class="imagen-container">
+            <img src="images/tec.jpg" alt="Imagen 1" class="imagen-galeria">
+            <p class="titulo-imagen">Técnicas de relajación</p>
         </div>
-    </div>
+
+        <!-- Imagen 2 -->
+        <div class="imagen-container">
+            <img src="images/mind.jpg" alt="Imagen 2" class="imagen-galeria">
+            <p class="titulo-imagen">Mindfulness en la naturaleza</p>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="imagen-container">
+            <img src="images/ejer.jpg" alt="Imagen 3" class="imagen-galeria">
+            <p class="titulo-imagen">Ejercicio al aire libre</p>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="imagen-container">
+            <img src="images/med-g.png" alt="Imagen 4" class="imagen-galeria">
+            <p class="titulo-imagen">Meditación guiada</p>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="imagen-container">
+            <img src="images/com.jpg" alt="Imagen 5" class="imagen-galeria">
+            <p class="titulo-imagen">Comunicación asertiva</p>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="imagen-container">
+            <img src="images/diario.jpg" alt="Imagen 6" class="imagen-galeria">
+            <p class="titulo-imagen">Diario emocional</p>
+        </div>
+    </section>
+
+    <!-- Sección de videos destacados -->
+    <section class="videos-destacados">
+        <h2>Videos Destacados</h2>
+        <div class="destacadas-container">
+            <!-- Video destacado 1 -->
+            <div class="destacada">
+                <video controls class="video-destacado">
+                    <source src="videos/yoga.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p class="titulo-destacada">Yoga</p>
+            </div>
+
+            <!-- Video destacado 2 -->
+            <div class="destacada">
+                <video controls class="video-destacado">
+                    <source src="videos/ejercicio.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p class="titulo-destacada">Ejercicio al aíre libre</p>
+            </div>
+
+            <!-- Video destacado 3 -->
+            <div class="destacada">
+                <video controls class="video-destacado">
+                    <source src="videos/anti.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p class="titulo-destacada">Ejercicios para reducir el estrés</p>
+            </div>
+        </div>
+    </section>
 </div>
     
     <footer>
-        <p>&copy; 2025 3er año Sección "B"</p>
+        <p>&copy; 2025 3er año Sección "C"</p>
     </footer>
 
    <!-- Botón para mostrar/ocultar el chatbot -->
