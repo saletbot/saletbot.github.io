@@ -15,6 +15,7 @@
     </header>
    
     <div class="nav-container">
+        
         <img src="images/logo.png" alt="Logotipo del Colegio La Salle" class="logo" width="160px">
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav id="nav-menu">
@@ -27,24 +28,128 @@
         </nav>
     </div>
 
-    <div class="containerblog">
-        <h2>Blog</h2>
-        <p>Bienvenido a la sección de Blog. Aquí encontrarás las últimas publicaciones y artículos relacionados con el acompañamiento emocional.</p>
-        <div class="post-container">
-            <div class="post-summary">
-                <h3>Título de la Publicación 1</h3>
-                <p>Resumen breve de la publicación 1. <a href="#">Leer más</a></p>
+    <!-- Contenido interno del blog -->
+<div class="contenedor-blog">
+    <!-- Encabezado del blog -->
+    
+        <h2>SaletBlog</h2>
+        <p class="descripcion-blog">
+            Bienvenido al blog de SaletBot, tu espacio para explorar temas relacionados con el bienestar emocional, la gestión del estrés y el desarrollo personal. Aquí encontrarás artículos prácticos, consejos y herramientas que te ayudarán a mejorar tu salud mental y emocional. ¡Acompáñanos en este viaje de autoconocimiento y crecimiento!
+        </p>
+    
+
+    <!-- Entradas del blog -->
+    <section class="entradas-blog">
+        <!-- Entrada 1: Cómo manejar el estrés en tiempos difíciles -->
+        <article class="entrada">
+            <img src="images/blog1.png" alt="Imagen de blog 1" class="entrada-imagen">
+            <h2 class="entrada-titulo">Cómo manejar el estrés en tiempos difíciles</h2>
+            <p class="entrada-contenido">
+                El estrés es una respuesta natural del cuerpo ante situaciones desafiantes o amenazantes. Sin embargo, cuando se vuelve crónico, puede tener efectos negativos en nuestra salud física y mental. Aquí te compartimos algunas técnicas efectivas para manejar el estrés:
+            </p>
+            <ul class="entrada-lista">
+                <li><strong>Identifica las fuentes de estrés:</strong> Haz una lista de las situaciones o factores que te causan estrés. Esto te ayudará a entender mejor qué puedes cambiar o evitar.</li>
+                <li><strong>Practica la respiración profunda:</strong> Inhala lentamente por la nariz, sostén el aire durante unos segundos y exhala suavemente por la boca. Repite este proceso varias veces.</li>
+                <li><strong>Establece prioridades:</strong> Organiza tus tareas diarias y enfócate en lo más importante. Aprende a decir "no" cuando sea necesario para evitar sobrecargarte.</li>
+                <li><strong>Mantén un estilo de vida saludable:</strong> Come alimentos nutritivos, haz ejercicio regularmente y duerme lo suficiente. Un cuerpo sano es más resistente al estrés.</li>
+                <li><strong>Busca apoyo emocional:</strong> Habla con amigos, familiares o un profesional si te sientes abrumado. No tienes que enfrentar el estrés solo.</li>
+            </ul>
+
+            <!-- Sección de comentarios para esta entrada -->
+            <div class="seccion-comentarios">
+                <h3>Deja un comentario</h3>
+                <form class="formulario-comentario">
+                    <div class="form-group">
+                        <label for="nombre1">Nombre:</label>
+                        <input type="text" id="nombre1" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo1">Correo electrónico:</label>
+                        <input type="email" id="correo1" name="correo" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario1">Comentario:</label>
+                        <textarea id="comentario1" name="comentario" placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar comentario</button>
+                </form>
             </div>
-            <div class="post-summary">
-                <h3>Título de la Publicación 2</h3>
-                <p>Resumen breve de la publicación 2. <a href="#">Leer más</a></p>
+        </article>
+
+        <!-- Entrada 2: Beneficios del mindfulness para la salud mental -->
+        <article class="entrada">
+            <img src="images/blog2.png" alt="Imagen de blog 2" class="entrada-imagen">
+            <h2 class="entrada-titulo">Beneficios del mindfulness para la salud mental</h2>
+            <p class="entrada-contenido">
+                El mindfulness, o atención plena, es una práctica que nos ayuda a estar presentes en el momento actual, sin juzgar ni distraernos con pensamientos del pasado o del futuro. Estos son algunos de sus beneficios para la salud mental:
+            </p>
+            <ul class="entrada-lista">
+                <li><strong>Reduce la ansiedad y el estrés:</strong> Al enfocarte en el presente, puedes dejar de preocuparte por lo que podría pasar en el futuro.</li>
+                <li><strong>Mejora la concentración:</strong> El mindfulness te ayuda a entrenar tu mente para mantener la atención en una sola tarea, lo que aumenta tu productividad.</li>
+                <li><strong>Fomenta la autoconciencia:</strong> Al practicar mindfulness, aprendes a reconocer tus emociones y pensamientos sin dejarte llevar por ellos.</li>
+                <li><strong>Promueve la relajación:</strong> Las técnicas de mindfulness, como la meditación guiada, te ayudan a relajar tu cuerpo y mente.</li>
+                <li><strong>Mejora las relaciones interpersonales:</strong> Al estar más presente, puedes escuchar y comunicarte de manera más efectiva con los demás.</li>
+            </ul>
+
+            <!-- Sección de comentarios para esta entrada -->
+            <div class="seccion-comentarios">
+                <h3>Deja un comentario</h3>
+                <form class="formulario-comentario">
+                    <div class="form-group">
+                        <label for="nombre2">Nombre:</label>
+                        <input type="text" id="nombre2" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo2">Correo electrónico:</label>
+                        <input type="email" id="correo2" name="correo" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario2">Comentario:</label>
+                        <textarea id="comentario2" name="comentario" placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar comentario</button>
+                </form>
             </div>
-            <div class="post-summary">
-                <h3>Título de la Publicación 3</h3>
-                <p>Resumen breve de la publicación 3. <a href="#">Leer más</a></p>
+        </article>
+
+        <!-- Entrada 3: La importancia de la comunicación asertiva -->
+        <article class="entrada">
+            <img src="images/blog3.png" alt="Imagen de blog 3" class="entrada-imagen">
+            <h2 class="entrada-titulo">La importancia de la comunicación asertiva</h2>
+            <p class="entrada-contenido">
+                La comunicación asertiva es una habilidad que nos permite expresar nuestros pensamientos, sentimientos y necesidades de manera clara, directa y respetuosa. Aquí te explicamos por qué es importante y cómo practicarla:
+            </p>
+            <ul class="entrada-lista">
+                <li><strong>Expresa tus sentimientos sin culpar a los demás:</strong> Usa frases como "Me siento... cuando..." para comunicar tus emociones sin generar conflictos.</li>
+                <li><strong>Escucha activamente:</strong> Presta atención a lo que la otra persona está diciendo, sin interrumpir. Muestra empatía y comprensión.</li>
+                <li><strong>Mantén un tono de voz calmado:</strong> Evita levantar la voz o usar un tono agresivo. La calma facilita una comunicación efectiva.</li>
+                <li><strong>Evita generalizaciones:</strong> En lugar de decir "Siempre haces esto" o "Nunca me escuchas", enfócate en situaciones específicas.</li>
+                <li><strong>Beneficios de la comunicación asertiva:</strong> Mejora las relaciones interpersonales, reduce el estrés y fomenta el respeto mutuo.</li>
+            </ul>
+
+            <!-- Sección de comentarios para esta entrada -->
+            <div class="seccion-comentarios">
+                <h3>Deja un comentario</h3>
+                <form class="formulario-comentario">
+                    <div class="form-group">
+                        <label for="nombre3">Nombre:</label>
+                        <input type="text" id="nombre3" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo3">Correo electrónico:</label>
+                        <input type="email" id="correo3" name="correo" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario3">Comentario:</label>
+                        <textarea id="comentario3" name="comentario" placeholder="Escribe tu comentario aquí..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar comentario</button>
+                </form>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
+</div>
+
     <footer>
         <p>&copy; 2025 3er año Sección "C"</p>
     </footer>
